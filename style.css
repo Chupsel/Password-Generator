@@ -55,3 +55,9 @@ button:hover {
   text-align: center;
   color: #22c55e;
 }
+
+#strength {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
