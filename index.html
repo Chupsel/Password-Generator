@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Generator</title>
+</head>
+<body>
+  <h1>Password Generator</h1>
+
+  <input id="password" readonly>
+  <br><br>
+
+  <button onclick="generatePassword()">Generate Password</button>
+
+  <script>
+    function generatePassword() {
+      const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%";
+      let password = "";
+
+      for (let i = 0; i < 16; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        password += characters[randomIndex];
+      }
+
+      document.getElementById("password").value = password;
+    }
+  </script>
+</body>
+</html>
