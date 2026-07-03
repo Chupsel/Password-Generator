@@ -33,6 +33,27 @@ function generatePassword() {
   }
 
   document.getElementById("password").value = password;
+  let strength = "Weak";
+
+if (length >= 12 && characters.length > 30)
+    strength = "Medium";
+
+if (length >= 16 && characters.length > 60)
+    strength = "Strong";
+
+const strengthText = document.getElementById("strength");
+
+strengthText.textContent = "Strength: " + strength;
+
+if (strength === "Weak")
+    strengthText.style.color = "#ef4444";
+
+if (strength === "Medium")
+    strengthText.style.color = "#f59e0b";
+
+if (strength === "Strong")
+    strengthText.style.color = "#22c55e";
+
   document.getElementById("message").textContent = "Password generated!";
 }
 
