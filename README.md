@@ -9,10 +9,4 @@ A simple password generator made with HTML, CSS and JavaScript.
 - No tracking
 - Lightweight
 
-## Future Plans
-
-- Adjustable password length
-- Copy to clipboard
-- Password strength indicator
-
 Made by Odium
